@@ -1,0 +1,49 @@
+<form action="/submit-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" min="2" required />
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required />
+    <br>
+
+    <label for="rating">Rating:</label>
+    <input type="radio" id="rating" name="rating" value="1"/>
+    <input type="radio" id="rating" name="rating" value="2"/>
+    <input type="radio" id="rating" name="rating" value="3"/>
+    <input type="radio" id="rating" name="rating" value="4"/>
+    <input type="radio" id="rating" name="rating" value="5"/>
+    <br>
+
+    <label for="comments">Comments:</label>
+    <input type="text" id="comments" name="comments" max="500"/>
+    <br>
+
+    <label for="cookdate">Cook Date:</label>
+    <input type="date" id="cookdate" name="cookdate"/>
+    <br>
+
+    <label for="difficulty-select">Difficulty:</label>
+    <select name="difficulty" id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+    </select>
+    <br>
+
+    <legend>Dietary Options:</legend>
+    <input type="checkbox" id="vegetarian" name="vegetarian"/>
+    <label for="vegetarian">Vegetarian</label>
+    <input type="checkbox" id="vegan" name="vegan"/>
+    <label for="vegan">Vegan</label>
+    <input type="checkbox" id="gulten-free" name="gulten-free"/>
+    <label for="gulten-free">Gulten-Free</label>
+    <br>
+
+    <label for="servings made">Servings Made:</label>
+    <input type="number" min="1" max="20"/>
+    <br>
+
+
+    <input type="submit" value="Submit"/>
+</form>
